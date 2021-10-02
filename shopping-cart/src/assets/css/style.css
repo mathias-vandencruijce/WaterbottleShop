@@ -1,0 +1,312 @@
+
+/*------------------ algemeen ------------------
+body {
+    max-width: 1000px;
+    background-color: #0B0C10;
+    color: #dddddd;
+    font-family: "Arial", "sans-serif";
+    margin: 1rem auto auto;
+    font-size: 1.2rem;
+}
+
+p {
+    font-weight: bold;
+}
+
+img {
+    max-width: 1000px;
+    width: 100vw;
+}
+
+#footerHome {
+    position: absolute;
+    bottom: 0;
+}
+
+p#quotePoll, p#namePoll, p#summaryPoll, p#titlePoll {
+    margin-left: 2rem;
+}
+
+/*------------------ header & nav ------------------
+header {
+    min-height: 100px;
+    position: relative;
+    padding-top: .1rem;
+}
+
+h1 {
+    display: none;
+}
+
+ul {
+    overflow: hidden;
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    margin-left: 2rem;
+}
+
+li a {
+    display: block;
+    color: #dddddd;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    width: 7.5rem;
+    border-radius: 2rem;
+    background-color: #1F2833;
+    font-weight: bold;
+}
+
+li a:hover {
+    background-color: #40e3db;
+    color: #111111;
+    transition: 0.8s;
+}
+
+li#actual a {
+    background-color: #40e3db;
+    color: #111111;
+}
+
+#top > nav:nth-child(2) > ul:nth-child(1) > li:nth-child(1) {
+    margin-left: 0;
+}
+
+/*------------------ form ------------------
+form {
+    margin-top: 3rem;
+    font-size: 1.1rem;
+}
+
+label {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+input[type=text], select {
+    outline: none;
+    border: none;
+    border-bottom: 3px solid #40e3db;
+    background-color: #f8f8f8;
+    color: #0B0C10;
+    width: 100%;
+    padding: 0.3rem;
+    margin: 5px 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+}
+
+input[type=text]:focus {
+    outline: none;
+    background-color: #e0fffe;
+    transition: 0.3s;
+}
+
+textarea {
+    width: 100%;
+    margin: 5px 0;
+    height: 100px;
+    padding: 0.3rem;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    resize: none;
+    font-family: "Arial", "sans-serif";
+    color: #0B0C10;
+    border: 2px solid #40e3db;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+}
+
+textarea:focus {
+    outline: none;
+    background-color: #e0fffe;
+    transition: 0.5s;
+}
+
+input[type=date] {
+    font-size: 1rem;
+    font-family: "Arial", "sans-serif";
+    padding: 0.3rem;
+    color: #0B0C10;
+    border-radius: 0.3rem;
+    border: 2px solid #40e3db;
+    display: block;
+    margin: 5px 0;
+    width: 15%
+
+}
+
+input[type=date]:focus {
+    outline: none;
+    background-color: #e0fffe;
+    transition: 0.5s;
+}
+
+input[type=number] {
+    font-size: 1rem;
+    font-family: "Arial", "sans-serif";
+    padding: 0.3rem;
+    color: #0B0C10;
+    border-radius: 0.3rem;
+    border: 2px solid #40e3db;
+    display: block;
+    margin: 5px 0;
+    width: 15%
+}
+
+input[type=number]:focus {
+    outline: none;
+    background-color: #e0fffe;
+    transition: 0.5s;
+}
+
+#movieForm p:last-child {
+    display: flex;
+}
+
+#movieForm p:last-child .button:last-child {
+    margin-left: 5%;
+}
+
+#actorForm p:last-child {
+    display: flex;
+}
+
+#actorForm p:last-child .button:last-child {
+    margin-left: 5%;
+}
+
+.button, #postButton {
+    width: 100%;
+    background-color: #40e3db;
+    color: #0B0C10;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+#postButton {
+    display: block;
+    width: 98%;
+}
+
+.button.half {
+    width: 47.5%;
+}
+
+input.searchInput {
+    padding: 0.5rem;
+}
+
+/*------------------ knoppen ------------------
+a.changeMethod {
+    display: block;
+    color: #dddddd;
+    text-align: center;
+    padding: 0.5rem 0 0.5rem 0;
+    text-decoration: none;
+    border-radius: 2rem;
+    background-color: #1F2833;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 2rem;
+    width: 16%
+}
+
+a.changeMethod:hover {
+    background-color: #40e3db;
+    color: #111111;
+    transition: 0.8s;
+}
+
+button {
+    color: #dddddd;
+    background-color: #0B0C10;
+    border: 0;
+    padding: 0.3rem 1rem 0.4rem 1rem;
+    border-radius: 1rem;
+}
+
+button:hover {
+    background-color: #40e3db;
+    color: #111111;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+/*------------------ table ------------------
+table {
+    font-size: 1.1rem;
+    background-color: #1F2833;
+    padding: .8rem;
+    border-radius: 1rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hidden {
+    display: none;
+}
+
+th, td {
+    text-align: left;
+    padding: 0.8rem;
+}
+
+tr td:first-child, tr th:first-child {
+    padding-left: 2rem;
+}
+
+tr td:last-child, tr th:last-child {
+    padding-left: 2rem;
+}
+
+th {
+    font-size: 1.3rem;
+    color: #40e3db;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+tr:hover td {
+    background: #0B0C10;
+    transition: 0.8s;
+}
+
+tr:hover td button {
+    background-color: #1F2833;
+}
+
+tr:hover button:hover {
+    background-color: #40e3db;
+    color: #111111;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+div#blogPosts h3 {
+    margin-left: 2rem;
+}
+
+.error {
+    color: #ff0000;
+}
+
+#blogPosts div div{
+    margin-left: 2rem;
+}
+
+#messageJan, #messageJeanine,#messageJos, #messageMarie {
+    margin-left: 2rem;
+}
+ */
